@@ -1,0 +1,14 @@
+=============================================================================================================================================================
+When we try to print the output on screen/console , its an expensive process.
+Languages try to store the output. ( buffer output).
+Program terminates then it prints all of the output  at one go.
+After printing if we use flush then it will flush the previous buffer memory.
+
+-----------------------------------------------------------------------------------------------
+ios_base :: sync_with_stdio(false);             //OUTPUT IN ONE GO
+cin.tie(NULL);cout.tie(NULL);
+------------------------------------------------------------------------------------------------
+fflush(stdout);   // if using printf and scanf in cpp
+cout<<flush;      // if using cin and cout in cpp
+System.out.flush();  //in java
+stdout.flush()   //in python
